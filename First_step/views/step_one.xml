@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	      <!--Tree view create db-->
+            <record model="ir.ui.view" id="step_tree_view">
+                <field name="name">step.step.tree</field>
+                <field name="model">step.step</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                    <tree string="Modules">
+                        <field name="db_name"/>
+                        <field name="db_login"/>
+                        <field name="db_password"/>
+                        
+                    </tree>
+                </field>
+            </record>
+            
+            
+            
+	 <record model="ir.ui.view" id="step_form_view">
+                <field name="name">step.step.form</field>
+                <field name="model">step.step</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="base">
+                     <sheet>
+                      <header>
+			
+		        <button string="Base create" type="object" name="db_create" class="oe_highlight"/>
+				   <!--   <button string="Base delete" type="object" name="db_delete" class="oe_highlight"/>-->    
+		
+		    </header>
+                    	    <group>
+			<field name="db_name"/>
+			<field name="db_login"/>
+			<field name="db_password"/>  
+					
+						
+			</group>
+              
+                    </sheet>
+                   </form>
+                </field>
+            </record> 
+	
+
+	
+ 
+	 
+                
+                
+                
+                
+           
+            
+            	  <record model="ir.actions.act_window" id="Step_one">
+                <field name="name">Base</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">step.step</field>
+                <field name="view_mode">tree,form</field>
+                </record>
+      
+
+					
+       </data>
+       
+
+</odoo>

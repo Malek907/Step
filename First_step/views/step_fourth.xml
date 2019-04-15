@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	
+
+            
+            
+	 <record model="ir.ui.view" id="lol_form_view">
+                <field name="name">fourth.step.form</field>
+                <field name="model">fourth.step</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="assa">
+                     <sheet>
+                     <header>
+  <button string="Actualiser" type="object" name="get_unistalled_list" class="oe_highlight"/> 
+                     
+                    </header>
+        
+                    	    <group>
+		<!--  
+						<field name="installed_modules" widget="selection"/> -->	
+								
+			
+                 <field name="base_id"/>
+       
+ <field name="name"/>
+              	               	 
+   	 <field name="allo"/>
+              	               	 
+              	 
+
+			                                              
+			
+		
+						
+			</group>
+              
+                    </sheet>
+                   </form>
+                </field>
+            </record> 
+	
+
+	
+ 
+	 
+                
+                
+                
+                
+           
+            
+            	  <record model="ir.actions.act_window" id="cc">
+                <field name="name">Module assa</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">fourth.step</field>
+                <field name="view_mode">tree,form</field>
+                </record>
+      
+
+					
+       </data>
+       
+
+</odoo>

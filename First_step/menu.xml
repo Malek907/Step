@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+   
+<menuitem id="module_root" name="Step" />
+           <menuitem id="module_root_menu" parent="module_root" name="step one"/>
+           <menuitem id="create_menu" name="Creer une base" parent="module_root_menu"  action="Step_one"/>
+           <menuitem id="delete_menu" name="supprimer une base" parent="module_root_menu"  action="aa"/>
+           <menuitem id="install_menu" name="Installer un module" parent="module_root_menu"  action="bb"/>
+           <menuitem id="ses_menu" name="Module" parent="module_root_menu"  action="cc"/> 
+                        
+            
+          
+
+</data>	
+</odoo>

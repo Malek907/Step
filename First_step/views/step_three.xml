@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	
+
+            
+            
+	 <record model="ir.ui.view" id="install_form_view">
+                <field name="name">third.step.form</field>
+                <field name="model">third.step</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="install">
+                     <sheet>
+                      <header>
+			
+		  <!--       <button string="Actualiser" type="object" name="get_db_list" class="oe_highlight"/> 
+				     <button string="installer" type="object" name="module_install" class="oe_highlight"/>    
+				     <button string="desinstaller" type="object" name="module_uninstall" class="oe_highlight"/> -->   
+				     <button string="Actualiser" type="object" name="get_unistalled_list" class="oe_highlight"/> 
+				     <button string="Ajouter" type="object" name="user_create" class="oe_highlight"/> 
+				     <button string="Affichage" type="object" name="write_dd" class="oe_highlight"/>  
+				      
+		
+		    </header>
+                    	    <group>
+		<!--  
+						<field name="installed_modules" widget="selection"/> -->	
+							 		<field name="db_liste" widget="selection"/>  
+			
+                 <field name="login"/>
+              	 <field name="pass_word"/>
+                 <field name="asshole"/>
+              	 
+              	 <group>
+              	 	          <!--    <field name="uninstalled_modules"/> --> 
+              	 
+              	 </group>
+			                                              
+			
+		
+						
+			</group>
+              
+                    </sheet>
+                   </form>
+                </field>
+            </record> 
+	
+
+	
+ 
+	 
+                
+                
+                
+                
+           
+            
+            	  <record model="ir.actions.act_window" id="bb">
+                <field name="name">Module install</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">third.step</field>
+                <field name="view_mode">tree,form</field>
+                </record>
+      
+
+					
+       </data>
+       
+
+</odoo>

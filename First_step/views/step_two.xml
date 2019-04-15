@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	
+                       <record model="ir.ui.view" id="delete_tree_view">
+                <field name="name">scnd_step.tree</field>
+                <field name="model">scnd_step</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                    <tree string="delete">
+                        <field name="db_liste" widget="selection"/>
+                        <field name="name"/>
+                                               
+                        
+                        
+          
+                        
+                    </tree>
+                </field>
+            </record> 
+            
+            
+	 <record model="ir.ui.view" id="delete_form_view">
+                <field name="name">scnd_step.form</field>
+                <field name="model">scnd_step</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="base">
+                     <sheet>
+                      <header>
+			
+		  <!--       <button string="Actualiser" type="object" name="get_db_list" class="oe_highlight"/> --> 
+				      <button string="Base delete" type="object" name="db_delete" class="oe_highlight"/>    
+				      				      <button string="Base restore" type="object" name="db_restore" class="oe_highlight"/>    
+				      
+		
+		    </header>
+                    	    <group>
+			<field name="db_liste" widget="selection"/>
+						
+						
+			                                              
+			
+		
+						
+			</group>
+              
+                    </sheet>
+                   </form>
+                </field>
+            </record> 
+	
+
+	
+ 
+	 
+                
+                
+                
+                
+           
+            
+            	  <record model="ir.actions.act_window" id="aa">
+                <field name="name">Supprimer</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">scnd_step</field>
+                <field name="view_mode">tree,form</field>
+                </record>
+      
+
+					
+       </data>
+       
+
+</odoo>
